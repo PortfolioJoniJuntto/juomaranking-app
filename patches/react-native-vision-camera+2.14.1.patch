@@ -1,0 +1,13 @@
+diff --git a/node_modules/react-native-vision-camera/android/build.gradle b/node_modules/react-native-vision-camera/android/build.gradle
+index 76dca11..5781f28 100644
+--- a/node_modules/react-native-vision-camera/android/build.gradle
++++ b/node_modules/react-native-vision-camera/android/build.gradle
+@@ -163,7 +163,7 @@ android {
+ 
+   packagingOptions {
+     // Exclude all Libraries that are already present in the user's app (through React Native or by him installing REA)
+-    excludes = ["**/libc++_shared.so", "**/libfbjni.so", "**/libjsi.so", "**/libreactnativejni.so", "**/libfolly_json.so", "**/libreanimated.so", "**/libjscexecutor.so", "**/libhermes.so"]
++    excludes = ["**/libc++_shared.so", "**/libfbjni.so", "**/libjsi.so", "**/libreactnativejni.so", "**/libfolly_json.so", "**/libreanimated.so", "**/libjscexecutor.so", "**/libhermes.so", "**/libfolly_runtime.so"]
+     // META-INF is duplicate by CameraX.
+     exclude "META-INF/**"
+   }
